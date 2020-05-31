@@ -21,6 +21,7 @@ gdb@ubuntu:~/gnu-debugger-course/video3$ nm video3_debug_symbols
 ## NM Symbol Types (for all symbols, use $man nm)
 * Lowercase symbols denote Local Symbols
 * Uppercase symbols denote external
+
 |  Symbol Type  |  Symbol Meaning  |
 |---------------|------------------|
 |       A       | Absolute Symbol  |
