@@ -17,3 +17,13 @@ gdb@ubuntu:~/gnu-debugger-course/video3$ nm video3_debug_symbols
 08048474            T               AddNumbers
 <virtual address>   <symbol type>   <symbol name>
 ```
+
+## NM Symbol Types
+|  Symbol Type  |  Symbol Meaning  |
+|---------------|------------------|
+|       A       | Absolute Symbol  |
+|       B       | In the Uninitalized Data Section (BSS) |
+|       D       | In the Initalized Data Section |
+|       N       | Debugging symbol |
+|       T       | In the text section |
+|       U       | Symbol is undefined |
