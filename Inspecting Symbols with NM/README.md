@@ -19,8 +19,9 @@ gdb@ubuntu:~/gnu-debugger-course/video3$ nm video3_debug_symbols
 ```
 
 ## NM Symbol Types (for all symbols, use $man nm)
-* Lowercase symbols denote Local Symbols
-* Uppercase symbols denote external
+* Lowercase symbols denote local symbols
+* Uppercase symbols denote external symbols
+* Could be useful for trying to identify location in memory where function is loading
 
 |  Symbol Type  |  Symbol Meaning  |
 |---------------|------------------|
@@ -30,3 +31,11 @@ gdb@ubuntu:~/gnu-debugger-course/video3$ nm video3_debug_symbols
 |       N       | Debugging symbol |
 |       T       | In the text section |
 |       U       | Symbol is undefined |
+
+## NM usage
+```
+$nm -A (display absolute address)
+$nm -n (display in sorted order)
+$nm -g (external symbols)
+$nm -d (display size)
+```
