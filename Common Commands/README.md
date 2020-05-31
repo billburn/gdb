@@ -20,9 +20,21 @@ Usage: (gdb) info sources
 This will tell you what sources are used for the compiled binary
 ```
 
-## info variables
+## info variables (only shows global and static variables)
 ```
 Usage: (gdb) info variables
 This will tell you the variables that are part of the compiled binary
 * does not print local variables, only global and static
+```
+
+## info scope <variable name> (tab complete to see list)
+```
+Usage: (gdb) info scope <var_name>
+This will allow you to see local variables
+```
+
+## adding symbols to runtime with gdb
+```
+Usage: (gdb) symbol-file <name_of_symbol_file>
+Confirm with: (gdb) info variables
 ```
