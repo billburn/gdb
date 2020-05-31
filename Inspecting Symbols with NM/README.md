@@ -14,6 +14,6 @@ gdb@ubuntu:~/gnu-debugger-course/video3$ nm video3_debug_symbols
 
 ## NM Structure
 ```
-     08048474             T          AddNumbers
+08048474            T               AddNumbers
 <virtual address>   <symbol type>   <symbol name>
 ```
