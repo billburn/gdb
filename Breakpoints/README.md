@@ -8,6 +8,9 @@
 (gdb) break *<memory address>
 (gdb) break <function number>
 (gdb) break <line number>
+(gdb) c or continue program execution
+(gdb) stepi (steps one instruction exactly)
+(gdb) step <n> (steps until program reaches Nth instruction)
 ```
 
 ## List all Breakpoints
