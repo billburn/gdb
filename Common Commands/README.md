@@ -39,5 +39,3 @@ Usage: (gdb) symbol-file <name_of_symbol_file>
 Confirm with: (gdb) info variables
 Alternative: you may use objcopy to add symbols too, check Google (objcopy --add-gnu-debug-link=<name_of_symbol_file>)
 ```
-
-## test
