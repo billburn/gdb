@@ -39,3 +39,36 @@ Usage: (gdb) symbol-file <name_of_symbol_file>
 Confirm with: (gdb) info variables
 Alternative: you may use objcopy to add symbols too, check Google (objcopy --add-gnu-debug-link=<name_of_symbol_file>)
 ```
+
+## Breakpoint Usage
+```
+(gdb) break *<memory address>
+(gdb) break <function number>
+(gdb) break <line number>
+```
+
+## List all Breakpoints
+```
+(gdb) info breakpoints
+```
+
+## Disable a breakpoint
+```
+(gdb) disable <breakpoint number to disable>
+```
+
+## Enable a breakpoint
+```
+(gdb) enable <breakpoint number to enable>
+```
+
+## Delete a breakpoint
+```
+(gdb) delete <breakpoint number to delete>
+```
+
+## Info Registers
+```
+* The program needs to be run first
+(gdb) info registers
+```
