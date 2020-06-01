@@ -12,6 +12,7 @@
 -r relative timestamp (relative timestamp provides total run time in ms)
 -e qualifying expression (eg: open, socket, connect, recv)
 -p process id (should be run as sudo)
+-c count executable arguments (Count time, calls, and errors for each system call and report a summary on program exit)
 ```
 
 ## Usage
@@ -21,4 +22,5 @@ $strace -o output.txt -t <name of binary>
 $strace -o output.txt -r <name of binary>
 $strace -e access,write,close (if a list, no space between expressions)
 $sudo strace -p <process id>
+$strace -c <executable arguments> <name of binary>
 ```
