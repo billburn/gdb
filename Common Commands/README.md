@@ -72,3 +72,37 @@ Alternative: you may use objcopy to add symbols too, check Google (objcopy --add
 * The program needs to be run first
 (gdb) info registers
 ```
+
+## Printing Registers
+```
+When using x/ or printing a register, it must have a $ prefix
+Usage: (gdb) x/xs $eax
+
+(gdb) info registers 
+eax            0x4	4
+ecx            0xbffff394	-1073745004
+edx            0xbffff324	-1073745116
+ebx            0xb7fc6ff4	-1208193036
+esp            0xbffff2d0	0xbffff2d0
+ebp            0xbffff2f8	0xbffff2f8
+esi            0x0	0
+edi            0x0	0
+eip            0x8048579	0x8048579 <main+10>
+eflags         0x282	[ SF IF ]
+cs             0x73	115
+ss             0x7b	123
+ds             0x7b	123
+es             0x7b	123
+fs             0x0	0
+gs             0x33	51
+(gdb) x/xs ecx
+No symbol "ecx" in current context.
+(gdb) x/xs $ecx
+0xbffff394:	 "\t\365\377\277C\365\377\277H\365\377\277K\365\377\277"
+```
+
+## Modifying Registers
+```
+* This is accomplished via the set command
+Usage: (gdb) set $eip = 0x80484f4
+```
