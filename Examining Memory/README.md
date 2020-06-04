@@ -32,6 +32,7 @@ Example: (gdb) x/s 0xbffff54a => prints the string located at this memory addres
 Example: (gdb) x/4x 0xbffff54a => prints the next (4) hex addresses
 Example: (gdb) x/i 0xbffff54a => prints the assembly instruction for the address
 Example: (gdb) x/10xw $esp => prints the next (10) assembly instructions after the pointer for $ESP register
+Example: (gdb) x/10xb $esp => prints the next (10) bytes in hex as bytes
 
 (gdb) x/s 0xbffff54a
 0xbffff54a:	 "test"
